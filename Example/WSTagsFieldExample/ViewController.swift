@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         //tagsField.translatesAutoresizingMaskIntoConstraints = false
         //tagsField.heightAnchor.constraint(equalToConstant: 150).isActive = true
 
-        tagsField.cornerRadius = 3.0
+        tagsField.wsTagsCornerRadius = 10.0
         tagsField.spaceBetweenLines = 10
         tagsField.spaceBetweenTags = 10
 
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     @IBAction func touchChangeAppearance(_ sender: UIButton) {
         tagsField.layoutMargins = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
         tagsField.contentInset = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2) //old padding
-        tagsField.cornerRadius = 10.0
+        tagsField.wsTagsCornerRadius = 10.0
         tagsField.spaceBetweenLines = 2
         tagsField.spaceBetweenTags = 2
         tagsField.tintColor = .red
